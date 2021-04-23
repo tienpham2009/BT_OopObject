@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đơn giản - di chuyển đối tượng</title>
+
+</head>
+<body>
+
+<canvas id="myCanvas" style="border: 1px solid black" width="500" height="300"></canvas>
+<p>
+    <button onclick="">Click Me</button>
+</p>
+
+<script src="Rectangle.js"></script>
+<script>
+    let image = new Image();
+    image.src = 'img/nobita.gif ';
+    let moveObject = new Rectangle(200,100,50,50,image);
+    // window.addEventListener('keydown', function (evt) {
+    //
+    //     moveObject.move(evt);
+    // })
+    moveObject.start();
+
+    // setInterval(moveObject.start,100);
+    // console.log(moveObject.canvas.height);
+
+
+
+
+</script>
+</body>
+</html>
